@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/catalogue_poster"
+        android:layout_width="@dimen/width_thumb_movie_list"
+        android:layout_height="@dimen/height_thumb_movie_list"
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitXY"
+        tools:src="@drawable/poster_dragonball" />
+
+    <TextView
+        android:id="@+id/catalogue_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_thumb_movie_list"
+        android:layout_marginLeft="@dimen/padding_thumb_movie_list"
+        android:layout_toEndOf="@id/catalogue_poster"
+        android:layout_toRightOf="@id/catalogue_poster"
+        android:maxLines="2"
+        tools:text="@string/movie_nama" />
+
+    <TextView
+        android:id="@+id/catalogue_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/catalogue_name"
+        android:layout_marginStart="@dimen/padding_thumb_movie_list"
+        android:layout_marginLeft="@dimen/padding_thumb_movie_list"
+        android:layout_marginTop="@dimen/padding_subtitle_movie_list"
+        android:layout_toEndOf="@id/catalogue_poster"
+        android:layout_toRightOf="@id/catalogue_poster"
+        android:ellipsize="end"
+        android:maxLines="3"
+        tools:text="@string/movie_description" />
+
+
+</RelativeLayout>
